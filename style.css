@@ -1,0 +1,12 @@
+.drawing-board {
+    height: 512px;
+    width: 512px;
+    background-color: rgb(161, 180, 180);
+    display: flex;
+    flex-wrap: wrap ;
+    padding: 10px;
+    border-radius: 7px;
+}
+.clicked{
+    background-color: gold;
+}
