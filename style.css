@@ -1,5 +1,4 @@
 *{
-    /* border: 2px solid red; */
     margin: 0;
     padding: 0;
 }
@@ -19,7 +18,7 @@ html, body{
     padding: 20px;
     gap: 20px;
 }
-.heading{
+#heading{
     width: 70vh;
     color: white;
     text-shadow: 3px 3px 1px rgba(207, 202, 202, 1);
@@ -28,10 +27,12 @@ html, body{
     font-weight: 900;
     font-family: monospace;
 }
-.drawing-board{
+#drawing-board{
     width: 70vh;
-    height: 60vh;
+    height: 70vh;
     border: 3px solid grey;
+    display: flex;
+    flex-wrap: wrap;
 }
 .buttons{
     display: flex;
@@ -49,9 +50,28 @@ html, body{
     transition: background-color 0.001s ease-in-out;
 }
 button:hover{
-    background: gold;
+    background: rgb(0, 130, 170);
+    color: wheat;
 }
 button:active{
-    background-color: rgb(0, 130, 170);
-    color: wheat;
+    background: gold;
+    color: black;
+}
+.pressed{
+    color: gold;
+}
+#input-form{
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+label{
+    font-size: 20px;
+    color: white;
+}
+input{
+    flex: 1;
+    font-size: 20px;
+    font-family: monospace;
 }
